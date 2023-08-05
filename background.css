@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Arima";
+    opacity: 1;
+}
+body{
+    background: linear-gradient(to bottom, #f9efea, #f5ccb8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0px;
+    
+}
+
+/*nav*/
+.nav{ 
+    z-index: 9999;
+}
+.nav .current{
+    background-color: #1b3e9c;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111027;
+    position: fixed;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    font-size: 25px;
+    display: block;
+    color: #F9EFEA;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+li a:hover {
+    background-color: #1b3e9c;
+}
+li a:active {
+    background-color: #2b51b9;
+}
+/*end nav*/
+
+#mainContainer{
+    background-color:white;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    color:#242377;
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 40px;
+    font-size: 45px;
+    line-height: 1;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+#mainContainer a{
+    display:inline-block;
+    position: relative;
+    top: 10px;
+    margin-left: 15px;
+    font-size: 60px;
+    font-weight: 600;
+    transition: transform .5s;
+    transform:scale(80%);
+}
+
+#mainContainer a:hover{
+    transform:scale(100%);
+}
+#mainContainer .first:hover ~ .drop{
+    transform: translateY(0%) scale(100%);
+    visibility: visible;
+    opacity: 1;
+    user-select:all;
+
+}
+/*@keyframes reveal{
+    from{ 
+        opacity:0;
+        transform:translateY(-20px);}
+    to{opacity:1;
+    visibility:visible;}
+
+}*/
+#mainContainer .drop{
+    opacity: 0;
+    transform:translateY(-10%) scale(90%);
+    transition: transform .3s, opacity .3s;
+    user-select: none;
+}
+#one{
+    font-weight: 100;
+}
+#two{
+    font-weight: 200;
+}
+#three{
+    font-weight: 300;
+}
+#four{
+    font-weight: 400;
+}
+#five{
+    font-weight: 500;
+}
+#six{
+    font-weight: 600;
+}
+#seven{
+    font-weight: 700;
+}
+
+#description{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    color:#242377;
+    display:inline-block;
+    position: relative;
+    margin-top: 150px;
+    top: -100px;
+    margin-left: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+#letter{
+    position:fixed;
+    bottom: -1650px;
+    left: 750px;
+    z-index: -1;
+    display:block;
+    overflow: hidden;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+#letter p{
+    position:relative;
+    font-size: 1000px;
+    font-weight: 500;
+    color:#242377;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes slideIn{
+    from{transform:translateY(-100%)}
+    to{transform:translateY(0%)}
+}
+@media (max-width: 800px) {
+    #mainContainer{
+        font-size: 30px;
+        line-height: .6;}
+    #mainContainer a{
+        font-size: 30px;}
+    }

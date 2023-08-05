@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Arima";
+    opacity: 1;
+}
+
+body{
+    background: linear-gradient(to bottom, #f9efea, #f5ccb8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0px;
+    color:#242377;
+    
+}
+
+/*nav*/
+.nav{ 
+    z-index: 9999;
+}
+.nav .current{
+    background-color: #1b3e9c;
+
+}
+
+ul {
+    list-style: none;
+    margin-top: -100px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111027;
+    position: fixed;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    font-size: 25px;
+    display: block;
+    color: #F9EFEA;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+li a:hover {
+    background-color: #1b3e9c;
+}
+li a:active {
+    background-color: #2b51b9;
+}
+/*end nav*/
+
+#main{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    top: 0;
+    transition: .2s;
+    
+}
+#text{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    padding-inline: 30px;
+    position: relative;
+    font-size: 17px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#set1{
+    display: block;
+    margin-top: 40px;
+    height:500px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: .3s;
+}
+#Aa{
+    transform: scale(1700%);
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    position:relative;
+    top: 250px;
+    z-index: 10;
+}
+#Aa:hover ~ .aCaptions{
+    opacity: 1;
+    font-size: 32px;
+}
+#a1{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    top: 15%;
+    right:400px;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+#a2{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    left: 150px;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+#a3{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    top: 45%;
+    left: 500px;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+
+#set2{
+    display: block;
+    margin-top: 100px;
+    height:500px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: .3s;
+}
+#Oo{
+    transform: scale(1700%);
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    position:relative;
+    top: 250px;
+    z-index: 10;
+}
+#Oo:hover ~ .oCaptions{
+    opacity: 1;
+    font-size: 32px;
+}
+#o1{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    right:400px;
+    top: 25%;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+#o2{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    top: 35%;
+    left: 400px;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+
+#set3{
+    display: block;
+    margin-top: 100px;
+    height:600px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: .3s;
+}
+#Yy{
+    transform: scale(1700%);
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    position:relative;
+    top: 250px;
+    z-index: 10;
+}
+#Yy:hover ~ .yCaptions{
+    opacity: 1;
+    font-size: 32px;
+}
+#y1{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    right:130px;
+    bottom:10%;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+#y2{
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    top: 60%;
+    left: 350px;
+    transition: .3s;
+    line-height: 1;
+    opacity: 0;
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+    #main{
+        top: 60px;
+    }
+    #set1{
+        transform:scale(70%);
+        overflow: visible;
+    }
+    #a1{
+        transform: translateY(200px) translateX(270px);
+    }
+    #a3{
+        transform: translateY(100px) translateX(-200px);
+    }
+    #set2{
+        transform:scale(70%);
+        bottom: 200px;
+        overflow: visible;
+    }
+    #o1{
+        transform: translateY(240px) translateX(280px);
+    }
+    #o2{
+        transform: translateY(110px) translateX(-210px);
+    }
+    #set3{
+        transform:scale(70%);
+        bottom: 400px;
+        overflow: visible;
+    }
+}

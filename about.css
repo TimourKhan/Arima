@@ -1,0 +1,13 @@
+*{
+    font-family: "Arima";
+    opacity: 1;
+}
+
+body{
+    background: linear-gradient(to bottom, #f9efea, #f5ccb8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0px;
+    color:#242377;
+    
+}
