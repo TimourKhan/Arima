@@ -61,6 +61,7 @@ li a:active {
     margin-top: 100px;
     top: 0;
     transition: .2s;
+    margin-inline: 50px;
     
 }
 #text{
@@ -70,12 +71,14 @@ li a:active {
     position: relative;
     font-size: 17px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    
 
 }
 
 #set1{
     display: block;
     margin-top: 40px;
+    margin-inline: 50px;
     height:500px;
     position: relative;
     text-align: center;
@@ -128,6 +131,7 @@ li a:active {
 #set2{
     display: block;
     margin-top: 100px;
+    margin-inline: 50px;
     height:500px;
     position: relative;
     text-align: center;
@@ -172,6 +176,7 @@ li a:active {
 #set3{
     display: block;
     margin-top: 100px;
+    margin-inline: 50px;
     height:600px;
     position: relative;
     text-align: center;

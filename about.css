@@ -1,13 +1,195 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
+* {
     font-family: "Arima";
     opacity: 1;
-}
+    margin: 0;
 
-body{
+}
+body {
     background: linear-gradient(to bottom, #f9efea, #f5ccb8);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin:0px;
     color:#242377;
+}
+/*nav*/
+.nav{ 
+    z-index: 9999;
+}
+.nav .current{
+    background-color: #1b3e9c;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111027;
+    position: fixed;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    font-size: 25px;
+    display: block;
+    color: #F9EFEA;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+li a:hover {
+    background-color: #1b3e9c;
+}
+li a:active {
+    background-color: #2b51b9;
+}
+/*end nav*/
+
+#headerContent{
+    position: relative;
+    display: flex;
+    height: 100dvh;
+    min-height: 300px;
+    overflow: hidden;
+    align-items:end;
+    justify-content: center;
+    text-align: center;
+}
+#headerContent h1{
+    position: absolute;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 1.2em;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    bottom: 100px;
     
 }
+#image{
+    position: relative;
+    height: 100dvh;
+    min-height: 300px;
+    width: 100%;
+    background-image: url(images/ndiscover.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+
+}
+
+#main{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+#description{
+    background-color: white;
+    max-width: 1500px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-inline: 50px;
+
+}
+#mainContent{
+    position: relative;
+    margin-top: 50px;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+#leads{
+    position: relative;
+    display:block;
+    text-align: center;
+    margin-inline: 50px;
+}
+#leads h1{
+    font-weight: 500;
+    font-size: 40px;
+
+}
+#natanael{
+    position: relative;
+    margin-inline: 50px;
+    margin-top: 50px;
+}
+#natanael img{
+    position: relative;
+    width: 300px;
+    float: left;
+    
+}
+#natanaelText{
+    background-color: white;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 350px;
+    padding: 15px;
+    top: 40px;
+}
+
+#joanna{
+    clear: left;
+    position: relative;
+    margin-inline: 50px;
+    margin-top: 150px;
+    
+}
+#joanna img{
+    position: relative;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    float: right;
+}
+#joannaText{
+    background-color: white;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 350px;
+    padding: 15px;
+    top: 40px;
+}
+#contributors{
+    clear: right;
+    position: relative;
+    margin-top: 120px;
+    margin-inline: 50px;
+    text-align: center;
+}
+#contributors h2{
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+#contributors img {
+    width: 300px;
+    margin-inline: 20px;
+    margin-block: 20px;
+    height: auto;
+    max-width: 100%;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(3){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:5s;}
+.fling-minislide img:nth-child(1){animation-delay:10s;}
+
+/*END CAROUSEL*/
